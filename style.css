@@ -1,0 +1,22 @@
+.main {
+    display: grid;
+    grid-template: repeat(auto-fill, 1fr) / 1fr 4fr;
+    grid-template-areas: "sidebar header"
+                         "sidebar main-content"
+
+}
+
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+}
+
+.main-content {
+    display: grid;
+    grid-area: main-content;
+}
