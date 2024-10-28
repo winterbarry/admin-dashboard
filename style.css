@@ -15,11 +15,15 @@
 .header {
     display: grid;
     grid-area: header;
+    gap: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
 }
 
 .main-content {
     display: grid;
     grid-area: main-content;
+    background-color: lightgray;
 }
 
 /* sidebar styles */
@@ -34,7 +38,6 @@
     padding: 10px;
 }
 
-/* lesson 1 */
 .sidebar > ul > li:nth-child(1) {
     padding-bottom: 30px;
     font-size: 24px;
@@ -48,3 +51,61 @@
     width: 20px;
     filter: brightness(0) saturate(100%) invert(100%);
 }
+
+/* header styles */
+
+.header .icons button[type="submit"] {
+    border: none;
+    outline: none;
+  }
+  
+  .header .icons input[type="text"] {
+    border-radius: 10px;
+    width: 300px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+  }
+  
+  .header > .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header > .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+  }
+  
+  .header > .icons > .profile-container {
+    font-weight: bold;
+  }
+
+  .header > .icons > .profile-container > img {
+    width: 20px;
+  }
+
+  .header > .text > .text-icons {
+    font-weight: bold;
+  }
+
+  .header > .text > .text-icons > img {
+    width: 30px;
+  }
+
+  .header > .text > .text-buttons > button {
+    background-color: #38bdf8;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+  }
+
+  .header > .icons {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  /* main content styles */

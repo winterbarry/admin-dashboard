@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="main">
 
@@ -26,18 +28,28 @@
 
         <header class="header">
             <div class="icons">
-                <button>Placeholder</button>
-                <input type="text" placeholder="Search..">
-                <img src="bell-icon.png" alt="bell-icon">
-                <img src="profile-picture.png" alt="profile-picture">
+                <div class="search-container">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text">
+                </div>
+                <div class="profile-container">
+                    <img src="bell-ring-outline.svg" alt="bell-icon">
+                    <img src="dog.svg" alt="profile-picture">
+                    <span>Morgan Oakley</span>
+                </div>
             </div>
 
             <div class="text">
-                <img src="profile-picture.png" alt="profile-picture">
-                <p>Hi there, Morgan Oakley</p>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <div class="text-icons">
+                    <img src="dog.svg" alt="profile-picture">
+                    <span>Hi there,</span>
+                    <span>Morgan Oakley (@Morgan)</span>
+                </div>
+                <div class="text-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </header>
   
