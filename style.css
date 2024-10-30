@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .main {
     display: grid;
     grid-template: repeat(auto-fill, 1fr) / 1fr 4fr;
@@ -91,7 +95,9 @@
   }
 
   .header > .text > .text-icons > img {
-    width: 30px;
+    width: 50px;
+    float: left;
+    margin-right: 1rem;
   }
 
   .header > .text > .text-buttons > button {
@@ -109,3 +115,66 @@
   }
 
   /* main content styles */
+
+.main-content {
+  display: grid;
+  grid-template-areas: "main-text announcements"
+                       "main-text trending"
+}
+
+.main-text {
+  display: grid;
+  grid-area: main-text;
+}
+
+.main-text > h3 {
+  padding-left: 10px;
+}
+
+.announcements {
+  display: grid;
+  grid-area: announcements;
+}
+
+.trending {
+  display: grid;
+  grid-area: trending;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin-top: -250px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.project-card img {
+  width: 20px;
+}
+
+.announcement-texts {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.trending-icons {
+  background-color: white;
+  border-radius: 10px;
+  height: 350px
+}
+
+.trending-card > .float-icon > img {
+  width: 30px;
+  float: left;
+  margin-right:1rem;
+}
